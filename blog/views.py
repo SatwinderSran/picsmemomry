@@ -15,12 +15,12 @@ def home(request,*kwargs):
     context = {
         'posts': Post.objects.all()
     }
-    return render(request, 'blog/home1.html', context)
+    return render(request, 'blog/home.html', context)
 
 
 class PostListView(ListView):
     model = Post
-    template_name = 'blog/home1.html'  # <app>/<model>_<viewtype>.html
+    template_name = 'blog/home.html'  
     context_object_name = 'posts'
     ordering = ['-date_posted']
     paginate_by = 6
@@ -28,7 +28,7 @@ class PostListView(ListView):
 
 class UserPostListView(ListView):
     model = Post
-    template_name = 'blog/user_posts.html'  # <app>/<model>_<viewtype>.html
+    template_name = 'blog/user_posts.html'  
     context_object_name = 'posts'
     paginate_by = 6
 
@@ -77,7 +77,7 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 
 def self(request):
-    return render(request, 'blog/self.html', {'self': 'self'})
+    return render(request, 'blog/self.html', {'self': self})
 
 
 def searchResult(request):

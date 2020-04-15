@@ -4,7 +4,7 @@ body {
   color: #333333;
   margin-top: 5rem;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: capitalize;   
   margin:0; 
 }
@@ -148,11 +148,16 @@ a.article-title:hover {
   padding: 2px!important;
 }
 input.form-control1 {
-  width: 675px!important;
+  width: 350px!important;
 }
 
 input.form-control {
   width: 250px!important;
+  }
+
+input.form-control-file{
+  width: 200px!important;
+
 }
 .navbar{
   padding: 0;
