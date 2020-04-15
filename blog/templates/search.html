@@ -10,7 +10,7 @@
 	<div class="container">
 		<div class="row mx-auto">
 			{% for obj in posts %}
-				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+				<div class="col-md-12 col-lg-6 col-xs-12 mb-2">
 					<div class="card-subtitle content-section mt-0" >
 						<p><a href="{{obj.get_absolute_url}}"><img class="img-fluid card-img" src="{{obj.image.url}}" alt="{{obj.name}}">
 						<div class="card-subtitle mb-0 text-center article-title">

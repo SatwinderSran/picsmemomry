@@ -85,7 +85,7 @@ def searchResult(request):
     query = None
     if 'q' in request.GET:
         query = request.GET.get('q')
-        posts = Post.objects.all().filter(Q(name__contains=query) | Q(city__contains=query))
+        posts = Post.objects.all().filter(Q(name__iexact=query) | Q(city__iexact=query))
     return render(request, 'search.html', {'query':query, 'posts':posts})
 
   
