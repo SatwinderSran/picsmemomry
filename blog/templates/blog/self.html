@@ -1,0 +1,16 @@
+
+{% extends "blog/base.html" %}
+{% load static %}
+{% block content %}    
+    <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Hi! I'm Jimmy</h1>
+          <img src="{% static 'blog/jimmy.png' %}" height=300/><hr>
+          <p class="lead">Fresh Bachelor's CS grad, ex consultant, & software intern, with high integrity and interpersonal skills searching for backend developer opportunities with a developing and driven team for a company that values transparency, teamwork, and personal growth. Experience through university research and internships required me to work heavily with AWS and many different types of databases on distributed networks. I have ample experience in Java, Python, C, Git, RESTful APIs, and SQL through countless of homework assignments and projects. With my bachelor’s degree and internship, I feel like I am someone who can learn quickly and make an immediate impact. I am very eager to prove my worth and I believe that I can be a very perfect fit for any company.          
+          </p>
+          <p>
+            <a href="mailto:sjsran@yahoo.com" class="btn btn-primary my-2">Email me</a>
+          </p>          
+        </div>
+      </section>
+{% endblock content %}

@@ -1,0 +1,30 @@
+{% extends "blog/base.html" %}
+{% load static %}
+{% block title %}
+	Search - Jimmy site
+{% endblock %}
+{% block content %}
+	<div>
+		<p class="text-center my_search_text">You have searched for: <b>"{{ query }}"</b></p>
+	</div>
+	<div class="container">
+		<div class="row mx-auto">
+			{% for obj in posts %}
+				<div class="col-12 col-sm-6 col-md-4 col-lg-4">
+					<div class="card-subtitle content-section mt-0" >
+						<p><a href="{{obj.get_absolute_url}}"><img class="img-fluid card-img" src="{{obj.image.url}}" alt="{{obj.name}}">
+						<div class="card-subtitle mb-0 text-center article-title">
+							<h6>{{obj.name}}</h6>
+							<p>{{obj.city}}</p></a>
+						</div>
+					</div>
+				</div>
+				{% empty %}
+				<div class="row mx-auto">
+					<p class="text-center my_search_text">0 results found.</p>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}
+
