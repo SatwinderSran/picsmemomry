@@ -190,3 +190,13 @@ input.form-control-file{
   -webkit-transform: translate(-50%, 0%);
   transform: translate(-50%, 0%);
 }
+
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.mt-1, .my-1 {
+  margin-top: .25rem!important;
+  margin-left: 10px;
+}
