@@ -21,14 +21,6 @@ def home(request):
     return render(request, 'blog/home.html', context)
 
 
-# class PostListView(ListView):
-#     model = Post
-#     template_name = 'blog/home.html'  
-#     context_object_name = 'posts'
-#     ordering = ['-date_posted']
-#     paginate_by = 6
-
-
 class UserPostListView(ListView):
     model = Post
     template_name = 'blog/user_posts.html'  
