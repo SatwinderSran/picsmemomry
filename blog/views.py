@@ -8,22 +8,25 @@ from django.views.generic import (
     UpdateView,
     DeleteView
 )
-from .models import Post
+from .models import Post,Slider
 from django.db.models import Q
 
-def home(request,*kwargs):
+def home(request):
+    posts = Post.objects.all()
+    sliders = Slider.objects.all_featured() 
     context = {
-        'posts': Post.objects.all()
-    }
+        'posts': posts,
+        'sliders': sliders,
+        }
     return render(request, 'blog/home.html', context)
 
 
-class PostListView(ListView):
-    model = Post
-    template_name = 'blog/home.html'  
-    context_object_name = 'posts'
-    ordering = ['-date_posted']
-    paginate_by = 6
+# class PostListView(ListView):
+#     model = Post
+#     template_name = 'blog/home.html'  
+#     context_object_name = 'posts'
+#     ordering = ['-date_posted']
+#     paginate_by = 6
 
 
 class UserPostListView(ListView):
