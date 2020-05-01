@@ -42,9 +42,7 @@ class MarketingQueryset(models.query.QuerySet):
         return self.filter(active=True)
 
     def featured(self):
-        return self.filter(featured=True)\
-			.filter(start_date__lt=timezone.now())\
-			.filter(end_date__gte=timezone.now())
+        return self.filter(featured=True).filter(start_date__lt=timezone.now()).filter(end_date__gte=timezone.now())
 
 
 class MarketingManager(models.Manager):
