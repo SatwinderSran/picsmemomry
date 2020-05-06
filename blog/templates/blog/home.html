@@ -35,8 +35,7 @@
     </div>    
   </div>
 
-<div class="row">
-  {% if is_paginated %}
+<div class="row">  
   <div class="mx-auto">
     {% if posts.has_previous %}
     <a class="btn btn-outline-info mb-5 btn-sm" href="?page=1">First</a>
@@ -57,7 +56,7 @@
     {% endif %}
 
   </div>
-  {% endif %}
+ 
 </div>
 {% endblock content %}
 
