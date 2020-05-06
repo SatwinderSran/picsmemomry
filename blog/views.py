@@ -15,9 +15,9 @@ from django.db.models import Q
 def home(request):
     posts = Post.objects.all().order_by('-date_posted')
     sliders = Slider.objects.all_featured()
-    paginator = Paginator(posts, 2)
-    page = request.POST.get('page')
-    posts =paginator.get_page(page)
+    paginator = Paginator(posts, 4)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
 
     context = {
         'posts': posts,
