@@ -26,21 +26,52 @@ ul {
 .bg-steel {  
   background-color: #2679b1;
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: uppercase;  
  
 }
 
-.site-header .navbar-nav .nav-link {
-  color: #185168;
+.topnav {
+  /* overflow: hidden; */
+  background-color: #141961;
 }
+
+.topnav a {
+  float: left;
+  color: black; 
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+}
+
+
+
+
+.site-header .navbar-nav .nav-link {
+  color: #58bb0768;
+ 
+} 
 
 .site-header .navbar-nav .nav-link:hover {
   color: #ee3514;
+ 
+  
+ 
 }
 
 .site-header .navbar-nav .nav-link.active {
   font-weight:500;
-}
+ 
+
+} 
+
 
 
 .content-section {
@@ -198,6 +229,7 @@ input.form-control-file{
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 10px;
+ 
 }
 
 .mt-1, .my-1 {
