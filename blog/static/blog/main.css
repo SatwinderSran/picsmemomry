@@ -45,16 +45,13 @@ ul {
 
 .topnav a:hover {
   border-bottom: 3px solid red;
-  width:60%;
-  display:block;
-  margin:0 auto;
+  width:60%;  
 }
 
 .topnav a.active {
   border-bottom: 3px solid red;
   width:60%;
-  display:block;
-  margin:0 auto;
+  
 }
 
 
