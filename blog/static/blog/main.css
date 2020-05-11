@@ -236,3 +236,8 @@ input.form-control-file{
   margin-top: .25rem!important;
   margin-left: 10px;
 }
+
+.navbar-nav .dropdown-menu {
+  position: absolute;  
+  background-color: #1e7e34;
+}
