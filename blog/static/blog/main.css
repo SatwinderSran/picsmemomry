@@ -55,8 +55,6 @@ ul {
 }
 
 
-
-
 .site-header .navbar-nav .nav-link {
   color: #58bb0768;
  
@@ -240,7 +238,11 @@ input.form-control-file{
   margin-left: 10px;
 }
 
-.dropdown-menu {  
+.navbar-nav .dropdown-menu {  
+  position: static;
   float: right;  
+  
+}
+.dropdown-menu {     
   background-color: #1e7e34;
 }
