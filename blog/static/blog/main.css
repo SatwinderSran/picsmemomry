@@ -45,10 +45,16 @@ ul {
 
 .topnav a:hover {
   border-bottom: 3px solid red;
+  width:60%;
+  display:block;
+  margin:0 auto;
 }
 
 .topnav a.active {
   border-bottom: 3px solid red;
+  width:60%;
+  display:block;
+  margin:0 auto;
 }
 
 
@@ -237,8 +243,7 @@ input.form-control-file{
   margin-left: 10px;
 }
 
-.navbar-nav .dropdown-menu {
-  position: static;
+.dropdown-menu {  
   float: right;  
   background-color: #1e7e34;
 }
